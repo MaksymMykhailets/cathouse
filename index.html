@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>Cathouse</title>
+    <title>CatHouse</title>
 </head>
 
 <body>
@@ -23,7 +23,13 @@
             <ul class="posts">
                 <li class="post">
                     <a href="#">
-                        <img src="./img/picture 1.png" alt="kitten" class="post-img">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/picture-1.png">
+
+                            <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/picture-1-small.png">
+
+                            <img src="img/picture-1-small.png" alt="Description of Image">
+                        </picture>
                         <div class="overlay">
                             <h2 class="post-title sub-title">Коти та їхні чудові навички: від полювання до загадкових
                                 здібностей</h2>
@@ -32,7 +38,7 @@
                 </li>
                 <li class="post">
                     <a href="#">
-                        <img src="./img/picture 2.png" alt="scary kitten" class="post-img">
+                        <img src="./img/picture-2.png" alt="scary kitten" class="post-img">
                         <div class="overlay">
                             <h2 class="post-title sub-title">Коти в літературі та мистецтві: від Егіпетських богів до
                                 сучасних
@@ -42,7 +48,7 @@
                 </li>
                 <li class="post">
                     <a href="#">
-                        <img src="./img/picture 3.png" alt="cat" class="post-img">
+                        <img src="./img/picture-3.png" alt="cat" class="post-img">
                         <div class="overlay">
                             <h2 class="post-title sub-title">Котячі породи для активних власників: як вибрати
                                 компаньйона
